@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f7f5"><meta name="description" content="Электронная визитная карточка Исаева Андрея Константиновича">
+<meta property="og:title" content="Исаев Андрей Константинович — контакты"><meta property="og:description" content="Официальная визитная карточка и контактные данные"><meta property="og:type" content="website"><meta property="og:image" content="card.png">
+<title>Исаев Андрей Константинович — электронная визитка</title>
+<style>
+:root{color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#202020;background:#f4f4f2}
+*{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:0 auto;padding:clamp(16px,4vw,38px) 16px 72px}
+h1{font:600 clamp(18px,2.3vw,23px)/1.3 Georgia,"Times New Roman",serif;text-align:center;margin:0 0 22px}
+.card{width:100%;height:auto;display:block;background:white;box-shadow:0 12px 42px #00000012;border:1px solid #ddd}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:23px 0 14px}
+a.action,button.action{font:600 15px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;text-align:center;text-decoration:none;display:flex;align-items:center;justify-content:center;min-height:52px;padding:13px 12px;background:#fff;border:1px solid #d6d6d6;border-radius:12px;color:#161616;cursor:pointer}
+a.action:hover,button.action:hover{background:#fdf9ed;border-color:#bb963f}a.primary{background:#242424;color:white;border-color:#242424}a.primary:hover{background:#4e4e4e}
+.note{font-size:13px;line-height:1.55;color:#666;text-align:center;margin:5px auto 24px}
+.extras{display:flex;align-items:center;justify-content:center;gap:20px;background:white;border:1px solid #e1e1e1;padding:16px 20px;border-radius:12px;max-width:530px;margin:20px auto 0}
+.extras img{width:112px;height:112px;object-fit:contain}.extras strong{display:block;margin-bottom:5px}.extras a{color:#252525}.extras small{color:#666}
+footer{text-align:center;font-size:12px;color:#888;margin-top:24px}
+@media(max-width:650px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.controls .primary{grid-column:span 2}.extras{gap:10px}.extras img{width:94px;height:94px}h1{margin-bottom:14px}}
+@media(max-width:370px){.controls{grid-template-columns:1fr}.controls .primary{grid-column:auto}}
+</style></head><body><main>
+<h1>Исаев Андрей Константинович</h1>
+<img class="card" src="card.png" alt="Официальная визитная карточка Исаева Андрея Константиновича, Государственная Дума Российской Федерации" width="1559" height="1009">
+<nav class="controls" aria-label="Контактные действия">
+<a class="action primary" href="isaev-andrey.vcf" download="Исаев_Андрей_Константинович.vcf">＋ Сохранить контакт</a>
+<a class="action" href="tel:+74956928168">☎ Позвонить</a>
+<a class="action" href="mailto:isayev@duma.gov.ru">✉ Написать</a>
+<a class="action" href="https://t.me/LIVEISAEV" target="_blank" rel="noopener noreferrer">↗ Telegram</a>
+<a class="action" href="https://maps.apple.com/?q=%D0%9E%D1%85%D0%BE%D1%82%D0%BD%D1%8B%D0%B9%20%D0%A0%D1%8F%D0%B4%201%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0" target="_blank" rel="noopener noreferrer">⌖ Адрес на карте</a>
+<button class="action" id="share" type="button">↥ Поделиться</button>
+</nav>
+<p class="note">Контакт сохраняется на русском языке и содержит фотографию. На iPhone после открытия файла подтвердите добавление контакта.</p>
+<div class="extras"><img src="telegram-qr.png" alt="QR-код Telegram-канала LIVEISAEV"><div><strong>Telegram-канал</strong><a href="https://t.me/LIVEISAEV" target="_blank" rel="noopener noreferrer">@LIVEISAEV</a><p><small>Отсканируйте QR-код или нажмите на ссылку.</small></p></div></div>
+<footer>Электронная контактная карточка · Исходная композиция визитки сохранена</footer>
+</main><script>
+document.getElementById('share').addEventListener('click', async function(){
+const data={title:'Исаев Андрей Константинович',text:'Электронная визитная карточка',url:location.href};
+if(navigator.share){try{await navigator.share(data)}catch(e){if(e.name!=='AbortError')alert('Не удалось поделиться ссылкой')}}
+else if(navigator.clipboard&&window.isSecureContext){try{await navigator.clipboard.writeText(location.href);this.textContent='✓ Ссылка скопирована'}catch(e){prompt('Скопируйте ссылку:',location.href)}}
+else{prompt('Скопируйте ссылку:',location.href)}
+});
+</script></body></html>
