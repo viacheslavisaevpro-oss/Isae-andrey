@@ -1,41 +1,32 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#f7f7f5"><meta name="description" content="Электронная визитная карточка Исаева Андрея Константиновича">
-<meta property="og:title" content="Исаев Андрей Константинович — контакты"><meta property="og:description" content="Официальная визитная карточка и контактные данные"><meta property="og:type" content="website"><meta property="og:image" content="card.png">
-<title>Исаев Андрей Константинович — электронная визитка</title>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f5f3ee">
+<meta name="description" content="Электронная визитка Исаева Андрея Константиновича — контакты, телефон, почта, Telegram и сохранение в телефон.">
+<meta property="og:type" content="website"><meta property="og:title" content="Исаев Андрей Константинович — Электронная визитка"><meta property="og:description" content="Контакты и сохранение в телефон"><meta property="og:image" content="https://viacheslavisaevpro-oss.github.io/Isae-andrey/portrait.jpg">
+<title>Электронная визитка — Исаев Андрей Константинович</title>
 <style>
-:root{color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#202020;background:#f4f4f2}
-*{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:0 auto;padding:clamp(16px,4vw,38px) 16px 72px}
-h1{font:600 clamp(18px,2.3vw,23px)/1.3 Georgia,"Times New Roman",serif;text-align:center;margin:0 0 22px}
-.card{width:100%;height:auto;display:block;background:white;box-shadow:0 12px 42px #00000012;border:1px solid #ddd}
-.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:23px 0 14px}
-a.action,button.action{font:600 15px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;text-align:center;text-decoration:none;display:flex;align-items:center;justify-content:center;min-height:52px;padding:13px 12px;background:#fff;border:1px solid #d6d6d6;border-radius:12px;color:#161616;cursor:pointer}
-a.action:hover,button.action:hover{background:#fdf9ed;border-color:#bb963f}a.primary{background:#242424;color:white;border-color:#242424}a.primary:hover{background:#4e4e4e}
-.note{font-size:13px;line-height:1.55;color:#666;text-align:center;margin:5px auto 24px}
-.extras{display:flex;align-items:center;justify-content:center;gap:20px;background:white;border:1px solid #e1e1e1;padding:16px 20px;border-radius:12px;max-width:530px;margin:20px auto 0}
-.extras img{width:112px;height:112px;object-fit:contain}.extras strong{display:block;margin-bottom:5px}.extras a{color:#252525}.extras small{color:#666}
-footer{text-align:center;font-size:12px;color:#888;margin-top:24px}
-@media(max-width:650px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.controls .primary{grid-column:span 2}.extras{gap:10px}.extras img{width:94px;height:94px}h1{margin-bottom:14px}}
-@media(max-width:370px){.controls{grid-template-columns:1fr}.controls .primary{grid-column:auto}}
+:root{--navy:#142744;--blue:#14559b;--gold:#c29b4c;--soft:#f5f3ee;--ink:#1a2535;color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(115deg,rgba(220,231,247,.36),transparent 43%),linear-gradient(252deg,rgba(230,213,181,.25),transparent 40%),#f7f6f3;color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+body::before{content:"";position:absolute;top:0;left:0;right:0;height:350px;background:linear-gradient(152deg,rgba(255,255,255,.82) 20%,rgba(63,111,183,.11) 41%,rgba(201,56,69,.08) 57%,transparent 70%);pointer-events:none}main{position:relative;max-width:850px;margin:auto;padding:32px 20px 58px;text-align:center}
+.portrait{display:block;width:min(245px,50vw);height:clamp(205px,47vw,330px);object-fit:cover;object-position:50% 19%;margin:0 auto 24px;border-radius:22px;border:4px solid #fff;box-shadow:0 15px 40px #1d2b3c23}
+.eyebrow{display:flex;align-items:center;gap:13px;justify-content:center;color:#a67b31;text-transform:uppercase;letter-spacing:.19em;font-size:clamp(13px,2.5vw,18px);font-weight:700}.eyebrow:before,.eyebrow:after{content:"";display:block;width:min(76px,13vw);height:1px;background:#b78a3e}
+h1{margin:14px auto 8px;color:var(--navy);font-size:clamp(30px,5.5vw,53px);line-height:1.13;font-weight:700} .position{font-size:clamp(17px,3.1vw,25px);font-style:italic;line-height:1.38;margin:0 auto 29px;max-width:710px}
+.cardframe{padding:8px;background:#fff;border:1px solid #d6bd89;border-radius:19px;box-shadow:0 10px 27px #413a2d1a;overflow:hidden}.cardframe img{display:block;width:100%;height:auto;border-radius:11px}
+.actions{margin:21px auto 0}.save{display:flex;align-items:center;justify-content:center;gap:12px;background:linear-gradient(180deg,#3178bb,#104783);color:#fff;box-shadow:0 5px 0 #0d3a6a,0 12px 22px #16436f30;border:1px solid #1b518a;min-height:66px;border-radius:17px;font:700 clamp(18px,3.5vw,25px)/1.2 Georgia,serif;text-decoration:none}.save:hover{filter:brightness(1.07)}.save:focus-visible,.tile:focus-visible{outline:3px solid #e9ad38;outline-offset:4px}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-top:19px}.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:110px;border:1px solid #e0d0ad;border-radius:16px;background:#fffdfb;color:var(--navy);text-decoration:none;font:600 clamp(12px,2.25vw,16px)/1.2 Georgia,serif;box-shadow:0 8px 18px #2020200b}.tile:hover{border-color:#b18842;background:#fff9ec}.bubble{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#f4e6cb;color:#a56f13}.tile:nth-child(2) .bubble{background:#e1ecf8;color:#24588f}.tile:nth-child(3) .bubble{background:#dceffb;color:#1484bf}svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+small.tip{display:block;color:#626d7d;font:13px/1.5 system-ui,sans-serif;margin:20px auto 0}.foot{margin-top:32px;border-top:1px solid #d5bd8b;padding-top:20px;font-size:12px;text-transform:uppercase;letter-spacing:.23em;color:#9a7539} .footicon{font-size:25px;letter-spacing:0;display:block;margin-bottom:5px}
+@media(max-width:410px){main{padding:23px 12px 42px}.tiles{gap:7px}.tile{min-height:95px;border-radius:13px;gap:8px}.bubble{width:40px;height:40px}.bubble svg{width:22px;height:22px}.position{margin-bottom:20px}.cardframe{padding:4px}.save{min-height:60px}}
+@media(prefers-reduced-motion:no-preference){.tile,.save{transition:filter .15s,border-color .15s,background .15s}}
 </style></head><body><main>
-<h1>Исаев Андрей Константинович</h1>
-<img class="card" src="card.png" alt="Официальная визитная карточка Исаева Андрея Константиновича, Государственная Дума Российской Федерации" width="1559" height="1009">
-<nav class="controls" aria-label="Контактные действия">
-<a class="action primary" href="isaev-andrey.vcf" download="Исаев_Андрей_Константинович.vcf">＋ Сохранить контакт</a>
-<a class="action" href="tel:+74956928168">☎ Позвонить</a>
-<a class="action" href="mailto:isayev@duma.gov.ru">✉ Написать</a>
-<a class="action" href="https://t.me/LIVEISAEV" target="_blank" rel="noopener noreferrer">↗ Telegram</a>
-<a class="action" href="https://maps.apple.com/?q=%D0%9E%D1%85%D0%BE%D1%82%D0%BD%D1%8B%D0%B9%20%D0%A0%D1%8F%D0%B4%201%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0" target="_blank" rel="noopener noreferrer">⌖ Адрес на карте</a>
-<button class="action" id="share" type="button">↥ Поделиться</button>
-</nav>
-<p class="note">Контакт сохраняется на русском языке и содержит фотографию. На iPhone после открытия файла подтвердите добавление контакта.</p>
-<div class="extras"><img src="telegram-qr.png" alt="QR-код Telegram-канала LIVEISAEV"><div><strong>Telegram-канал</strong><a href="https://t.me/LIVEISAEV" target="_blank" rel="noopener noreferrer">@LIVEISAEV</a><p><small>Отсканируйте QR-код или нажмите на ссылку.</small></p></div></div>
-<footer>Электронная контактная карточка · Исходная композиция визитки сохранена</footer>
-</main><script>
-document.getElementById('share').addEventListener('click', async function(){
-const data={title:'Исаев Андрей Константинович',text:'Электронная визитная карточка',url:location.href};
-if(navigator.share){try{await navigator.share(data)}catch(e){if(e.name!=='AbortError')alert('Не удалось поделиться ссылкой')}}
-else if(navigator.clipboard&&window.isSecureContext){try{await navigator.clipboard.writeText(location.href);this.textContent='✓ Ссылка скопирована'}catch(e){prompt('Скопируйте ссылку:',location.href)}}
-else{prompt('Скопируйте ссылку:',location.href)}
-});
-</script></body></html>
+<img class="portrait" src="portrait.jpg" alt="Портрет Андрея Константиновича Исаева" width="748" height="1040">
+<div class="eyebrow">Электронная визитка</div><h1>Исаев<br>Андрей Константинович</h1>
+<p class="position">Заместитель руководителя<br>фракции «ЕДИНАЯ РОССИЯ»</p>
+<section class="cardframe" aria-label="Оригинальная визитная карточка"><img src="card.png" width="1559" height="1009" alt="Государственная Дума. Исаев Андрей Константинович. Телефон: 8 495 692 81 68, электронная почта: isayev@duma.gov.ru" loading="eager"></section>
+<nav class="actions" aria-label="Контактные действия">
+<a class="save" href="isaev-andrey.vcf" type="text/vcard" download="Исаев_Андрей_Константинович.vcf"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M19 8v8M15 12h8"/></svg>Сохранить контакт</a>
+<div class="tiles"><a class="tile" href="tel:+74956928168"><span class="bubble"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.8L7 10a16 16 0 0 0 7 7l1.5-2a2 2 0 0 1 1.8-.6l3 .5a2 2 0 0 1 1.7 2z"/></svg></span>Позвонить</a>
+<a class="tile" href="mailto:isayev@duma.gov.ru"><span class="bubble"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 8 10-8"/></svg></span>E-mail</a>
+<a class="tile" href="https://t.me/LIVEISAEV" target="_blank" rel="noopener noreferrer"><span class="bubble"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m22 2-7 20-4.5-8.5L2 9zM22 2 10.5 13.5"/></svg></span>Telegram</a>
+<a class="tile" href="https://maps.apple.com/?q=%D0%9E%D1%85%D0%BE%D1%82%D0%BD%D1%8B%D0%B9%20%D0%A0%D1%8F%D0%B4%201%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0" target="_blank" rel="noopener noreferrer"><span class="bubble"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Адрес</a></div>
+</nav><small class="tip">При сохранении контакта на iPhone подтвердите добавление записи. ФИО указано по-русски, фотография встроена.</small>
+<footer class="foot"><span class="footicon">◆</span>Официальные контакты</footer>
+</main></body></html>
